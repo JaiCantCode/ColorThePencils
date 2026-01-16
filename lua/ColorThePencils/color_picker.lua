@@ -8,7 +8,7 @@ local conf = require("telescope.config").values
 
 
 function write_color_file(buffer)
-    local file_to_write = io.open("lua/FirstNeovimPlugin/last_color.txt","w")
+    local file_to_write = io.open("lua/ColorThePencils/last_color.txt","w")
 
     if file_to_write then
         file_to_write:write(buffer)
@@ -19,7 +19,7 @@ function write_color_file(buffer)
 end
 
 function read_color_file()
-    local file_to_read = io.open("lua/FirstNeovimPlugin/last_color.txt","r")
+    local file_to_read = io.open("lua/ColorThePencils/last_color.txt","r")
 
     if file_to_read then
         local color = file_to_read:read("*all")
