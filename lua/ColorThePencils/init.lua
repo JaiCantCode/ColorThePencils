@@ -1,6 +1,6 @@
 local m = {}
-local cp = require("FirstNeovimPlugin.color_picker")
-local tp = require("FirstNeovimPlugin.transparency_picker")
+local cp = require("ColorThePencils.color_picker")
+local tp = require("ColorThePencils.transparency_picker")
 
 
 local current_color = read_color_file() or "gruvbox"
